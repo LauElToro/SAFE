@@ -1,0 +1,1043 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: rgb(8, 8, 37);
+  margin-bottom: 1px;
+
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #226b9b;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(124, 184, 207);
+  transition: 0.5s;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: rgba(12, 22, 54, 1.945);
+  width: 100%;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.nav-item {
+  margin: 16px;
+}
+
+.nav-menu.active {
+  position: absolute;
+
+  left: 0;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(248, 244, 244);
+}
+.acento {
+  font-family: "Franklin Gothic Medium";
+  color: #2680f5;
+  text-shadow: #333;
+}
+
+#contenidoSlider {
+  height: 90vh;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/salto\ en\ montaña\ mujer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero p {
+  margin-top: 45%;
+  font-size: 2.3rem;
+
+  text-align: center;
+  font-style: italic;
+  font: bolder;
+  color: aliceblue;
+}
+
+#slider2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/montaña\ 2.jpg");
+}
+
+#slider3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/cima.jpg");
+}
+
+.hero {
+  position: relative;
+  color: white;
+  font-size: 2.75rem;
+  padding-top: 12%;
+  transition: 3s;
+}
+
+.hero button {
+  font-size: 1rem;
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+}
+
+.hero .flechas {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50%;
+}
+
+.sliderPuntos {
+  background-color: #3c5166;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderPuntos a:hover {
+  transition: 0.5s ease;
+  color: dodgerblue;
+}
+
+#somos-safe .container {
+  border-top-style: groove;
+  border: top width 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#somos-safe .texto {
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 3s;
+}
+
+#somos-safe h2 {
+  margin-top: 0px;
+  font-size: 5rem;
+  transition: 3s ease-out;
+}
+
+#somos-safe .img-container {
+  background-image: url("images/brazos\ arriba.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+  width: 400px;
+}
+#somos-safe .img-contenedor {
+  background-image: url("images/safe_blanco.png");
+  background: size 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+  width: 400px;
+}
+#somos-safe .about {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.imgBX {
+  padding-bottom: 500px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/SALTO\ BARRA.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/hombreenrio.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio-texto {
+  color: #fafafa;
+  text-align: center;
+}
+
+.imgIni {
+  padding-bottom: 500px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("images/safe_banner.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about .contentBX {
+  background: #162c3b;
+  padding: 100px;
+  width: 100%;
+}
+
+.heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.servicios img {
+  max-width: 100%;
+
+  background: #12222d;
+}
+
+article.estudio {
+  max-width: 350px;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #a1aaa8;
+}
+
+.estudio-card img {
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.categoria-card span {
+  background: #1b74ce;
+  color: #fafafa;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.texto-cards h3 {
+  margin-bottom: 1rem;
+}
+
+.estudio footer {
+  padding: 0 1rem;
+}
+
+.perfil-dr {
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil {
+  display: flex;
+}
+
+.img-perfil img {
+  width: 50px;
+  height: 60px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+.text-perfil {
+  display: flex;
+  flex-flow: column;
+}
+
+.text-perfil span:nth-child(2) {
+  color: #a1aaa8;
+}
+
+.est-ward {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+#nuestros-programas {
+  background-color: rgb(29, 28, 28);
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+
+  justify-content: center;
+}
+
+#nuestros-programas .cont {
+  padding: 220px 0px;
+}
+#nuestros-programas .programas {
+  display: flex;
+  justify-content: center;
+}
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p {
+  display: block;
+  font-size: 1em;
+}
+#nuestros-programas button {
+  cursor: pointer;
+}
+
+#nuestros-programas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+#nuestros-programas .carta2 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/corriendo\ en\ montaña.jpg");
+}
+
+#nuestros-programas .carta3 {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/SALTO\ BARRA.jpg ");
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/medicina_deportiva.jpg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/comunidad\ safe.jpg");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/salto\ en\ bosque.jpg");
+}
+
+.mapa h1 {
+  font-size: 2rem;
+  font: bold;
+
+  background-color: rgb(8, 8, 37);
+  color: aliceblue;
+  padding-top: 25px;
+  padding-left: 25%;
+  padding-bottom: 25px;
+}
+
+.nuestros {
+  font-size: 3.5rem;
+  padding-left: 25%;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.comunidadsafe {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("images/comunidad\ safe.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.deportistas {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eff2f5;
+}
+
+.slide-container {
+  width: 100%;
+  background-color: #12222d;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: #d5dee7;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: #226b9b;
+  border-radius: 25px 25px 0 25px;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #1b74ce;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(25, 25, 27);
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #4e4848;
+  text-align: center;
+}
+
+.botone {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+}
+
+.contacto {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/salto\ en\ bosque.jpg");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: rgba(212, 209, 238, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form {
+  background-color: rgba(8, 8, 37, 1.8);
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 10%, #a1aaa8);
+  position: absolute;
+}
+
+.circle.one {
+  width: 130px;
+  height: 130px;
+  top: 130px;
+  right: -40px;
+}
+
+.circle.two {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  right: 30px;
+}
+
+.contact-form:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(8, 8, 37);
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.titulo {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: rgb(8, 8, 37);
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: rgb(8, 8, 37);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.8rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}
+
+.icon {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+.contact-info {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-info .titulo {
+  color: rgb(8, 8, 37);
+}
+
+.texti {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.informacion {
+  display: flex;
+  color: rgb(0, 0, 0);
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, rgb(8, 8, 37), rgb(8, 8, 87));
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.4);
+}
+
+.contact-info:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid rgb(8, 8, 37);
+  border-radius: 50%;
+
+  bottom: -77px;
+  right: 50px;
+}
+
+.footer {
+  background: rgb(8, 8, 37);
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eff2f5;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer ul li a img {
+  filter: invert(1);
+  max-width: 20px;
+}
+
+.footer ul li a img:hover {
+  color: rgb(8, 8, 37);
+}
+.acent {
+  font-family: "Franklin Gothic Medium";
+  color: #1b74ce;
+}
+.hidden {
+  display: none;
+}
+.margen {
+  margin-top: 261px;
+}
+.transition {
+  transition: 3s ease-in;
+}
+.luz {
+  color: dodgerblue;
+}
+
+@media (max-width: 680px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(9, 11, 17);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  .nav-item {
+    margin: 16px;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  #somos-safe .container {
+    color: rgb(9, 10, 12);
+    justify-content: left;
+
+    background-color: #f9faff79;
+  }
+  #somos-safe .img-container {
+    display: none;
+  }
+  #somos-safe .img-contenedor {
+    display: none;
+  }
+
+  #somos-safe .container .texto {
+    text-align: left;
+    padding-bottom: 25px;
+  }
+
+  #somos-safe h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+  }
+
+  #somos-safe P {
+    text-align: left;
+  }
+
+  #nuestros-programas .programas {
+    padding: top 50px;
+    display: block;
+  }
+
+  .nuestros {
+    padding: 15px;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .texto-cards {
+    color: #0f0e0e;
+  }
+
+  article.estudio {
+    background: #f8fafc;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about .contentBX,
+  .about .imgBX {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+  }
+
+  .inicio {
+    margin-top: 50px;
+  }
+
+  .servicios {
+    background: #12222d;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .servicios .lista {
+    align-items: center;
+
+    font-size: 15px;
+    font-style: oblique;
+    color: #fff;
+  }
+
+  .servicios.lista li {
+    margin-top: 200px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    background-color: #eff2f5;
+  }
+
+  .footer {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .footer ul {
+    margin-bottom: 20px;
+  }
+}
